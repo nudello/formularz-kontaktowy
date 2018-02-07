@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="https://formspree.io/your@email.com" method="POST">
+
+        <!--          Custromer Info -->
+        <fieldset>
+            <legend>Customer Info</legend>
+           <br> <label for="name">Imię:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+            <br><label for="tel">Telefon:</label>
+            <input type="text" id="tel" name="tel" placeholder="1-123-123-1234" required pattern="^\d{1}-\d{3}-\d{3}-\d{4}$">
+            <br><label for="email">E-mail:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email adress" required>
+        </fieldset>
+
+
+        <!--       BOOK INFO-->
+        <div class="box2">
+        <fieldset>
+            <legend>Books</legend>
+            <input list="book" name="books" placeholder="Choose a book">
+            <datalist id="book">
+              <option value="Book numer 1">
+              <option value="Book numer 2">
+              <option value="Book numer 3">
+              <option value="Book numer 4">
+              <option value="Book numer 5">
+                        </datalist>
+            <label for="Quantity">Quantity (Maximum 5):</label>
+            <input type="number" name="Quantity" min="1" max="5" placeholder="1-5">
+        </fieldset>
+        <input type="submit" value="Submit">
+        </div>
+    </form>
+    
+</body>
+
+</html>

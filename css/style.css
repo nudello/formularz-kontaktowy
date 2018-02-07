@@ -1,0 +1,15 @@
+form {
+    background-color: #fff;
+    width: 500px;
+    color: #fff;
+    padding: 20px;
+}
+form fieldset{
+    color: #000;
+    padding-left: 70px;
+}
+form input,
+form label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
